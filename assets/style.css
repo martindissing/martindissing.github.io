@@ -74,6 +74,12 @@ a:focus-visible { outline: 2px solid var(--text); outline-offset: 3px; }
 .sub { margin: 0; font: italic 500 1rem/1.4 var(--serif); color: var(--muted); }
 small, .muted { color: var(--muted); }
 
+/* Undersider */
+.contact a.back { font-size: 0.8125rem; letter-spacing: 0.05em; }
+.single { padding: 2.5rem 3rem; max-width: 46rem; }
+.single .sub { margin-bottom: 0.15rem; }
+.single .entry p, .single .entry li { font-size: 0.9375rem; }
+
 /* Stats */
 .stat + .stat { margin-top: 1rem; }
 .stat b { display: block; font: 500 2rem/1 var(--serif); font-variant-numeric: lining-nums; }
@@ -96,6 +102,7 @@ small, .muted { color: var(--muted); }
   .cols { grid-template-columns: 1fr; }
   .side { border-right: 0; border-bottom: 1px solid var(--line); padding: 2rem 1.5rem; }
   .main { padding: 2rem 1.5rem; }
+  .single { padding: 2rem 1.5rem; }
 }
 
 @media print {
@@ -104,7 +111,7 @@ small, .muted { color: var(--muted); }
   .top { background: #fff; color: #000; padding: 0 0 1rem; }
   .contact a, .top .role { color: #475569; }
   .contact { justify-content: flex-start; }
-  .side, .main { padding: 1rem 0; }
+  .side, .main, .single { padding: 1rem 0; }
   .side { padding-right: 1.25rem; }
   .main { padding-left: 1.25rem; }
   .entry, .principle, section { break-inside: avoid; }
